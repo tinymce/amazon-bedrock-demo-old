@@ -3,10 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- replace 'no-api-key' with your own TinyMCE API key -->
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
     <title>TinyMCE AWS Bedrock Demo</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div>
+      <h1>String responses</h1>
+      <textarea id="string">Welcome to TinyMCE!</textarea>
+      <script type="module" src="string.js"></script>
+    </div>
+    <div>
+      <h1>Streaming responses</h1>
+      <textarea id="streaming">Welcome to TinyMCE!</textarea>
+      <script type="module" src="streaming.js"></script>
+    </div>
   </body>
 </html>
