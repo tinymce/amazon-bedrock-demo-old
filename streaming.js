@@ -37,7 +37,7 @@ const ai_request = (request, respondWith) => {
     ...pluginSystemMessages,
     // Additional system messages to control the output of the AI
     { text: 'Do not include html\`\`\` at the start or \`\`\` at the end.' },
-    { text: 'No explanation or boilterplate, just give the HTML response.' }
+    { text: 'No explanation or boilerplate, just give the HTML response.' }
   ]
 
   const system = systemMessages.map((message) => message.text).join('\n');
